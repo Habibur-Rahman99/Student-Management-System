@@ -1,0 +1,42 @@
+{% extends 'sms/studentdashboard/studentdashboardbase.html' %}
+{% load static %}
+{% block body_block %}
+
+<div class="wrapper">
+    <div class="card_container"> 
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>1</h1>
+                        <h3>Notice</h3>
+                    </div>
+                    <div class="icon_case">
+                        <img src="{% static 'images/nn.PNG' %}" alt="notice">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>0</h1>
+                        <h3>Class</h3>
+                    </div>
+                    <div class="icon_case">
+                        <img src="{% static 'images/sss.PNG' %}" alt="Classes">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h1></h1>
+                        <h3>Result</h3>
+                    </div>
+                    <div class="icon_case">
+                        <img src="{% static 'images/rr.PNG' %}" alt="Classes">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+           <h1><br> SMS </h1> 
+        </div>
+        
+        <ul class="manu"> 
+            <br>
+            <br>
+            <li><img src="{% static 'images/cc.PNG' %}" alt="">&nbsp;<span>Admin</span> </li>
+            <li><img src="{% static 'images/ddd.PNG' %}" alt="">&nbsp;<span>Dashboard</span> </li>
+            <li class="dropdown"><img src="{% static 'images/nn.PNG' %}" alt="">&nbsp;<span>Notice</span>
+
+                <div class="dropdown">
+                    <ul>
+                        <li><a herf="#">Class Notice</a></li>
+                        <li><a herf="#">public Notice</a></li>
+                    </ul> 
+                </div>
+
+
+        
+            </li> 
+            <li><img src="{% static 'images/sss.PNG' %}" alt="">&nbsp;<span>Class</span> </li>
+            <li><img src="{% static 'images/rr.PNG' %}" alt="">&nbsp;<span>Result</span> </li>
+            <li><img src="{% static 'images/sse.PNG' %}" alt="">&nbsp;<span>Search</span> </li>
+            <li><img src="{% static 'images/ccc.PNG' %}" alt="">&nbsp; <span>Change Password</span></li>
+            
+        </ul>
+
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="{% static 'images/search.png' %}" alt=""></button>
+                </div>
+                <div class="user">
+                    <div class="img-case">
+                        <img src="{% static 'images/user.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Students</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="{% static 'images/students.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>Teachers</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="{% static 'images/teachers.png' %}" alt="">
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

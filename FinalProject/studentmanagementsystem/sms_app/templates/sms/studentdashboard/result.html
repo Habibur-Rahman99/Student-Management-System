@@ -1,0 +1,67 @@
+{% extends 'sms/studentdashboard/studentdashboardbase.html' %}
+{% block body_block %}
+    <div class="wrapper">
+
+        <div class="info">
+            <form method="POST">
+                <label for="id">Student ID</label>
+                <input type="number" name="id" placeholder="ID">
+
+                <label for="batch">Select Batch</label>
+                <select name="batch" id="select">
+                    <option value="46(A)">46(A)</option>
+                    <option value="46(B)">46()</option>
+                    <option value="47(A)">47(A)</option>
+                    <option value="47(A)">47(b)</option>
+                </select>
+                <br>
+                <br>
+                <label for="year">Year</label>
+                <input type="number" name="year" placeholder="Example:22">
+
+                <label for="semester">Select Semester</label>
+                <select name="semester" id="select">
+                    <option value="Summer">Summer</option>
+                    <option value="winter">Winter</option>
+                </select>
+                <br>
+                <br>
+                <br>
+
+                <button type="submit" class="btn btn-success">Result</button>
+                <button type="exit" class="btn btn-danger btn2">Exit</button>
+            </form>
+        </div>
+
+
+        <div class="result_table">
+            <table>
+                <thead>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Marks</th>
+                </thead>
+                <tr>
+                    <td>CSEC110</td>
+                    <td>Machine Learning</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>CSEC110</td>
+                    <td>Machine Learning</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>CSEC110</td>
+                    <td>Machine Learning</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>CSEC110</td>
+                    <td>Machine Learning</td>
+                    <td>F</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}
